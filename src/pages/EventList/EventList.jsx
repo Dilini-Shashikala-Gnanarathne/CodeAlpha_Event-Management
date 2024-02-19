@@ -2,8 +2,9 @@ import EventCard from "../../components/EventCard/EventCard.jsx";
 import { eventList } from "../../utils/EventDatabase.jsx";
 import Navigation from "../../components/Navigation/Navigation.jsx";
 import React, { useState } from 'react';
-
+import Footer from "../../components/Footer/Footer.jsx";
 import "./EventList.css";
+
 
 const EventList = () => {
   const [formData, setFormData] = useState({
@@ -105,6 +106,10 @@ const EventList = () => {
               Location:
               <input type="text" name="location" value={formData.location} onChange={handleChange} />
             </label>
+            <label className="label4">
+              Discription:
+              <input type="text" name="dis" value={formData.dis} onChange={handleChange} />
+            </label>
             <label className="label5">
               Image URL:
               <input type="text" name="img" value={formData.img} onChange={handleChange} />
@@ -113,6 +118,7 @@ const EventList = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

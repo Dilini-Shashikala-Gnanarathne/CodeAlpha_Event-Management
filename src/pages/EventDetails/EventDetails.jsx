@@ -3,6 +3,7 @@ import { eventList } from "../../utils/EventDatabase";
 import Navigation from "../../components/Navigation/Navigation";
 import {MdCalendarMonth} from "react-icons/md";
 import {IoLocationSharp} from "react-icons/io5"
+import Footer from "../../components/Footer/Footer";
 import "./EventDetails.css";
 const EventDetails = ()=>{
   const {id}=useParams()
@@ -39,6 +40,7 @@ const EventDetails = ()=>{
           </p>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import FilterBox from "../../components/FilterBox/FilterBox";
 import SearchEventList from "../../components/SerachEventList/SearchEventList";
 import Navigation from "../../components/Navigation/Navigation"
 import './FilterEvents.css';
+import Footer from "../../components/Footer/Footer";
 const FilterEvents = ()=>{
    const [monthYear,setMonthYear]=useState({
     selectedMonth:null,
@@ -19,6 +20,7 @@ const FilterEvents = ()=>{
           <FilterBox getMonthYear={getMonthYear}/>
           <SearchEventList monthYear={monthYear}/>
         </div>
+        <Footer/>
       </div>
     )
   }
