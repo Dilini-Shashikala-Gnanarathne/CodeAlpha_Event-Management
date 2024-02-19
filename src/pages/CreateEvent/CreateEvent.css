@@ -1,3 +1,16 @@
-label{
+form {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-gap: 100px; 
+    padding-bottom: 50px;
+    border-color: #ffb700;
+
+}
+
+label {
     color: blue;
+    margin-bottom: 5px; 
+}
+.event-create{
+	background: red;
 }

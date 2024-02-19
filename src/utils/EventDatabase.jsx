@@ -10,7 +10,7 @@ export const eventList = [
     },
     {
       id: 2,
-      heading: "Fantasy Gaming Expo",
+      heading: "Fantasy Gaming ",
       date: { year: 2024, month: "May" },
       location: "Delhi, India",
       description:
