@@ -17,3 +17,50 @@
   margin-top: 140px;
   margin-bottom: 60px;
 }
+.create-events {
+  margin: 0 auto; 
+  margin-bottom: 250px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: white;
+  border-radius: 25px;
+  color: black;
+ 
+ 
+}
+.create-events h2{
+  margin-left: 25px;
+}
+.create-events input{
+  background: transparent;
+  gap: 50px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: black;
+  margin-left: 25px;
+}
+
+.create-events button{
+  color: aqua;
+  margin-left: 750px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.label1{
+  margin-top: 10px;
+  margin-left: 150px;
+}
+.label2{
+  margin-left: 150px;
+}
+.label3{
+  margin-left: 150px;
+}
+.label4{
+  margin-left: 150px;
+}
+.label5{
+  margin-left: 150px;
+}

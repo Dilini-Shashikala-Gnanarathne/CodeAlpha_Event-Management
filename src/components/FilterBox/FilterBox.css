@@ -1,10 +1,10 @@
 .filter-card {
-    width: 500px;
+    width: 750px;
     height: 70px;
     background-color: white;
     display: flex;
     flex-direction: column;
-  
+    margin-left: 30%;
     justify-content: space-between;
     align-items: center;
     border-radius: 12px;
@@ -41,4 +41,12 @@
   .filter-card button:hover {
     background-color: rgb(9, 140, 16);
   }
-  
+  .date{ 
+    color: rgb(5, 6, 6);
+  }
+
+  .date select{
+    color: aqua;
+    width: 100px;
+    height: 30px;
+  }

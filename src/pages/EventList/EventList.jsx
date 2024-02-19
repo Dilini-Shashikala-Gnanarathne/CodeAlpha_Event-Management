@@ -15,11 +15,30 @@ const EventList = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    if (name === "year") {
+      setFormData({
+        ...formData,
+        date: {
+          ...formData.date,
+          year: parseInt(value)
+        }
+      });
+    } else if (name === "month") {
+      setFormData({
+        ...formData,
+        date: {
+          ...formData.date,
+          month: value
+        }
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,7 +56,6 @@ const EventList = () => {
       location: "",
       img: ""
     });
-    // Update eventList with the new event
     eventList.push(newEvent);
   };
 
@@ -68,22 +86,26 @@ const EventList = () => {
           )}
         </div>
 
-        <div id="create-events-section">
+        <div id="create-events-section" className="create-events">
           <h2>Create New Event</h2>
           <form onSubmit={handleSubmit}>
-            <label>
-              Date:
-              <input type="text" name="date" value={formData.date} onChange={handleChange} />
-            </label>
-            <label>
+           <label className="label1">
+            Year:
+            <input type="number" name="year" value={formData.date.year} onChange={handleChange} />
+          </label>
+          <label  className="label2">
+            Month:
+            <input type="text" name="month" value={formData.date.month} onChange={handleChange} />
+          </label>
+            <label className="label3">
               Heading:
               <input type="text" name="heading" value={formData.heading} onChange={handleChange} />
             </label>
-            <label>
+            <label className="label4">
               Location:
               <input type="text" name="location" value={formData.location} onChange={handleChange} />
             </label>
-            <label>
+            <label className="label5">
               Image URL:
               <input type="text" name="img" value={formData.img} onChange={handleChange} />
             </label>

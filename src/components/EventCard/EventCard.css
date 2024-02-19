@@ -1,6 +1,7 @@
 .card {
+  margin-left: 200px;
   background-color: white;
-  width: 600px;
+  width: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,7 @@
   padding: 32px;
   border-radius: 18px;
   border: 2px rgba(0, 0, 0, 0.187);
+  height: 250px;
 }
 .card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.187);
@@ -18,7 +20,7 @@
 }
 .card .card-content {
   width: 230px;
-  height: 180px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,7 +32,7 @@
   color: rgb(43, 50, 43);
 
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 .card .card-content p {
   font-size: 18px;
